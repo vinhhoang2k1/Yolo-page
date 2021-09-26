@@ -5,7 +5,7 @@
   --black-color: rgb(46, 47, 51);
   --white-color: #fff;
 
-  --width-menu-mobile :150px;
+  --width-menu-mobile: 150px;
 }
 * {
   font-family: "Roboto", sans-serif;
@@ -155,11 +155,28 @@ p {
   margin-top: 1.2%;
   position: absolute;
   background-color: var(--primary-color);
-  width: 74%;
-  height: 83%;
+  width: 68%;
+  height: 90%;
   z-index: 98;
   transform: rotate(-135deg);
-  border-radius: 58% 42% 38% 62% / 42% 55% 45% 58%;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  animation: xoay 6s linear 0s infinite;
+  /* -webkit-animation: xoayvong 2s linear 0s infinite;
+  -moz-animation: xoayvong 2s linear 0s infinite;
+  -o-animation: xoayvong 2s linear 0s infinite; */
+}
+
+@keyframes xoay {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
 }
 
 .intro-top__img-sample {
@@ -225,8 +242,8 @@ p {
 
 /* product */
 .product-item {
-position: relative;
-margin-top: 40px;
+  position: relative;
+  margin-top: 40px;
 }
 
 .product-img-1 {
@@ -245,7 +262,6 @@ margin-top: 40px;
 .product-item:hover .product-img-2 {
   display: block;
   transition: 0.8s ease-in-out;
-
 }
 
 .product-info {
@@ -278,7 +294,6 @@ margin-top: 40px;
   width: 50%;
 }
 
-
 /* new-product */
 .new-product,
 .new-product h3 {
@@ -309,12 +324,12 @@ margin-top: 40px;
 }
 
 .footer-item h3 {
- margin: 20px 0;
+  margin: 20px 0;
 }
 
 .footer-item p {
   line-height: 2.5rem;
-  color :var(--black-color);
+  color: var(--black-color);
 }
 
 .footer-item p span {
@@ -335,7 +350,6 @@ margin-top: 40px;
 }
 
 @media (max-width: 1024px) {
-
   .nav__menu-mobile {
     flex: 1;
     display: block;
@@ -354,7 +368,7 @@ margin-top: 40px;
     display: none;
   }
   .menu-mobile {
-    left :calc(0px - var(--width-menu-mobile));
+    left: calc(0px - var(--width-menu-mobile));
     position: absolute;
     width: var(--width-menu-mobile);
     height: 200px;
@@ -362,11 +376,11 @@ margin-top: 40px;
     background-color: var(--white-color);
     margin-left: -30px;
     top: -20px;
-    box-shadow: 0 8px 8px 0 rgba(99, 99, 99, 0.5) ;
+    box-shadow: 0 8px 8px 0 rgba(99, 99, 99, 0.5);
     transition: 0.7s ease-in-out;
   }
   .menu-mobile label {
-    position: absolute; 
+    position: absolute;
     top: 10px;
     right: 5px;
   }
@@ -389,12 +403,10 @@ margin-top: 40px;
     left: 0;
   }
   .menu-mobile-link a:hover {
-    margin-left : 10px;
-    color :var(--primary-color);
+    margin-left: 10px;
+    color: var(--primary-color);
     transition: 0.3s ease-in-out;
   }
- 
-  
 }
 
 @media (min-width: 740px) and (max-width: 1024px) {
