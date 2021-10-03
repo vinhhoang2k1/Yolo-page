@@ -32,8 +32,7 @@ slideControlRight.onclick = () => {
 }
 setInterval(() => {
     document.getElementById('radio' + couter).checked = true;
-
-    ++couter;
+    couter++;
     numberActive.innerHTML = `<p class="number-active">${couter -   1 }</p>`;
     if (couter > 3) {
         couter = 1;
