@@ -9,7 +9,7 @@ menuBtn.onclick = () => {
     menuBtn.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
-let couter = 0;
+let couter = 1;
 
 // slide chay 
 
@@ -39,5 +39,5 @@ setInterval(() => {
     }
     numberActive.innerHTML = `<p class="number-active">${couter}</p>`;
     document.getElementById('radio' + couter).checked = true;
-
-}, 5000)
+    
+}, 5000) 
