@@ -9,32 +9,35 @@ menuBtn.onclick = () => {
     menuBtn.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
-let couter = 1;
+let couter = 0;
 
 // slide chay 
 
 
 slideControlLeft.onclick = () => {
-    numberActive.innerHTML = `<p class="number-active">${couter}</p>`;
-    document.getElementById('radio' + couter).checked = true;
     couter -= 1;
+    console.log(couter)
     if (couter < 1) {
         couter = 3;
     }
+    document.getElementById('radio' + couter).checked = true;
+    numberActive.innerHTML = `<p class="number-active">${couter}</p>`;
 }
 slideControlRight.onclick = () => {
-    numberActive.innerHTML = `<p class="number-active">${couter}</p>`;
-    document.getElementById('radio' + couter).checked = true;
     couter += 1;
+    console.log(couter)
     if (couter > 3 ) {
         couter = 1;
     }
+    numberActive.innerHTML = `<p class="number-active">${couter}</p>`;
+    document.getElementById('radio' + couter).checked = true;
 }
 setInterval(() => {
-    document.getElementById('radio' + couter).checked = true;
     couter++;
-    numberActive.innerHTML = `<p class="number-active">${couter -   1 }</p>`;
     if (couter > 3) {
         couter = 1;
     }
+    numberActive.innerHTML = `<p class="number-active">${couter}</p>`;
+    document.getElementById('radio' + couter).checked = true;
+
 }, 5000)
