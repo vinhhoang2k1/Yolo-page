@@ -32,12 +32,12 @@ slideControlRight.onclick = () => {
     numberActive.innerHTML = `<p class="number-active">${couter}</p>`;
     document.getElementById('radio' + couter).checked = true;
 }
-// setInterval(() => {
-//     couter++;
-//     if (couter > 3) {
-//         couter = 1;
-//     }
-//     numberActive.innerHTML = `<p class="number-active">${couter}</p>`;
-//     document.getElementById('radio' + couter).checked = true;
+setInterval(() => {
+    couter++;
+    if (couter > 3) {
+        couter = 1;
+    }
+    numberActive.innerHTML = `<p class="number-active">${couter}</p>`;
+    document.getElementById('radio' + couter).checked = true;
     
-// }, 5000) 
+}, 5000) 
