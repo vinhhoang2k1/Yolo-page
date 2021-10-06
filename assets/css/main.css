@@ -148,6 +148,10 @@ p {
   display: flex;
   transition: 2s;
 }
+
+.intro-top.mobile {
+  display: none;
+}
 .navigation-manual {
   position: absolute;
   top: 620px;
@@ -555,6 +559,12 @@ p {
   }
 }
 @media (max-width: 739px) {
+  .none-mb {
+    display: none;
+  }
+  .intro-top.mobile {
+    display: block;
+  }
   .container {
     padding: 0 10px;
   }
