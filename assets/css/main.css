@@ -16,6 +16,8 @@
 html,
 body {
   /* user-select: none; */
+  max-width: 1366px;
+  margin: 0 auto;
   font-size: 62.5%;
   scroll-behavior: smooth;
   background-color: var(--background-color);
@@ -58,7 +60,6 @@ p {
   margin: 0 auto;
   padding: 0 30px;
 }
-
 
 .product {
   margin: 0 40px;
@@ -130,8 +131,8 @@ p {
 /* intro-top */
 
 .slide-intro-top {
-  overflow-x: auto;
-  overflow: hidden;
+  /* overflow-x: auto;
+  overflow: hidden; */
   width: 600%;
   display: flex;
 }
@@ -223,12 +224,11 @@ p {
   margin-top: 1.2%;
   position: absolute;
   background-color: var(--primary-color);
-  width: 50%;
-  height: 87%;
+  width: 70%;
+  height: 97%;
   z-index: 89;
   border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
   animation: xoay 6s linear 0s infinite;
-  
 }
 
 @keyframes xoay {
@@ -249,13 +249,13 @@ p {
 .intro-top__img-sample img {
   position: absolute;
   z-index: 90;
-  height: 146%;
-  /* margin-left: -30%; */
-  margin-top: -102px;
+  height: 180%;
+  margin-left: -10%;
+  margin-top: -176px;
 }
 /* slide control */
 .slide-control {
-  transition: .2s;
+  transition: 0.2s;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -440,14 +440,13 @@ p {
   display: none;
 }
 
-@media (min-width :1200px) {
+@media (min-width: 1200px) {
   .intro-top__img {
     margin-left: 20%;
   }
 }
 
 @media (max-width: 1024px) {
- 
   input#stylebar {
     display: none;
   }
@@ -505,7 +504,7 @@ p {
   .menu__mb-icon {
     display: block;
   }
- 
+
   .nav__menu-left {
     display: block;
     position: absolute;
@@ -531,20 +530,21 @@ p {
   .intro-top {
     padding: 15px 0;
   }
-  
+
   .intro-top__img-bg {
-    width: 60%;
+    width: 65%;
     margin-top: 50px;
     height: 58%;
   }
+
   .intro-top-wraper {
     /* overflow: hidden; */
     min-width: 900px;
   }
   .intro-top__img-sample img {
     position: absolute;
-    height: 100%;
-    margin-top: -50px;
+    height: 126%;
+    margin-top: -79px;
   }
   .banner-mid {
     height: 320px;
@@ -554,11 +554,8 @@ p {
     margin: 30px;
   }
 }
-
 @media (max-width: 739px) {
-
   .container {
-
     padding: 0 10px;
   }
   .menu__mb-icon {
@@ -604,8 +601,7 @@ p {
   }
 }
 
-@media (max-width:350px) {
-  
+@media (max-width: 350px) {
   .intro-top .slogan {
     width: 85%;
   }
